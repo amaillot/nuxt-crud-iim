@@ -12,6 +12,12 @@
       "description": "Test encore",
       "price": "500",
       "id": 3
+    },
+    {
+      "name": "Nouveau produit que pese",
+      "description": "Produit trop cher pour toi",
+      "price": "10000000",
+      "id": 4
     }
   ]
 }

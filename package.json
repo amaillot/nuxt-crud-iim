@@ -1,8 +1,8 @@
 {
   "name": "iim-nuxtjs",
   "version": "1.0.0",
-  "description": "My astonishing Nuxt.js project",
-  "author": "Alexis Buon, Nicolas Fillard",
+  "description": "Nuxt.js project",
+  "author": "Alexandre Maillot, Marie Luc",
   "private": true,
   "scripts": {
     "dev": "nuxt",
