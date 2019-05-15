@@ -1,13 +1,14 @@
 <template>
-  <div class="VueToNuxtLogo">
-    <div class="Triangle Triangle--two" />
-    <div class="Triangle Triangle--one" />
-    <div class="Triangle Triangle--three" />
-    <div class="Triangle Triangle--four" />
-  </div>
+  <img class="img-landing" src="http://dev.meilleurs-masters.com/logo_ecole/logoiimencouleur-1548938387.png" alt="">
 </template>
 
 <style>
+  .img-landing{
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+
 .VueToNuxtLogo {
   display: inline-block;
   animation: turn 2s linear forwards 1s;

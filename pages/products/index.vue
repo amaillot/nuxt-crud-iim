@@ -1,12 +1,15 @@
 <template>
   <div>
-    <div class="container">
+    <div class="container container-products">
+      <img href="http://google.com" class="img-landing" src="http://dev.meilleurs-masters.com/logo_ecole/logoiimencouleur-1548938387.png" alt="">
+      <img class="img-landing-right" src="https://nuxtjs.org/meta_640.png" alt="">
+    <hr>
       <h2>Liste des produits</h2>
       <hr>
       <div class="row">
         <div class="col-md-3 mb-md-3" v-for="product in products" :key="product.id">
           <div class="card">
-            <img src="http://placehold.it/400x300" class="card-img-top" alt="">
+            <img src="https://3dnews.ru/assets/external/illustrations/2019/05/15/987496/PS561.jpg" class="card-img-top" alt="">
             <div class="card-body">
               <h5 class="card-title">{{product.name}}</h5>
               <p class="card-text">{{product.price}}€</p>
@@ -17,7 +20,7 @@
         </div>
       </div>
       <hr>
-      <div class="row">
+      <div class="row zone-button-add">
         <div class="col-md-12">
           <button  type="button" class="btn btn-secondary" data-toggle="modal" data-target="#newModal" v-on:click="toggleAddProduct()">Ajouter un nouveau produit</button>
         </div>
@@ -43,15 +46,15 @@
         </div>
       </div>
     </div>
-    <form @submit="formSubmit" v-if="showAddProduct">
-      <strong>Name:</strong>
+    <form class="form-add-product" @submit="formSubmit" v-if="showAddProduct">
+      <strong>Nom :</strong>
       <input type="text" class="form-control" v-model="name">
-      <strong>Price:</strong>
+      <strong>Prix :</strong>
       <input type="number" class="form-control" v-model="price">
-      <strong>Description:</strong>
+      <strong>Description :</strong>
       <textarea class="form-control" v-model="description"></textarea>
 
-      <button class="btn btn-success">Submit</button>
+      <button class="btn btn-success">Valider</button>
     </form>
   </div>
 </template>
@@ -81,7 +84,7 @@ export default {
     },
     head() {
       return {
-        title: "Le Store de ouf",
+        title: "Liste des produits",
       }
     },
     methods: {
@@ -109,4 +112,44 @@ export default {
 
 </script>
 
-<style></style>
+<style>
+
+  .img-landing{
+    max-width: 200px!important;
+    margin-bottom: 20px;
+  }
+
+  .img-landing-right{
+    max-width: 100px!important;
+    float: right;
+    position: relative;
+    top: -10px;
+  }
+
+  .container-products{
+    margin-top: 50px;
+  }
+
+  .container-products h2{
+    text-align: center;
+  }
+
+  .zone-button-add{
+    text-align: center;
+  }
+
+  .form-add-product{
+    width: 87%;
+    margin: 0 auto;
+  }
+
+  .img-landing{
+    max-width: 300px;
+  }
+
+  .form-control{
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+</style>

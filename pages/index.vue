@@ -3,10 +3,10 @@
     <div>
       <logo />
       <h1 class="title">
-        iim-nuxtjs
+        Projet Nuxtjs - IWM 5 - MARIE / MAILLOT
       </h1>
       <h2 class="subtitle">
-        My astonishing Nuxt.js project
+       Professeur : Alexandre Tobia
       </h2>
       <div class="links">
         <a
@@ -19,6 +19,10 @@
           target="_blank"
           class="button--grey"
         >GitHub</a>
+        <a
+                href="/products"
+                class="button--grey"
+        >Produits</a>
       </div>
     </div>
   </section>
@@ -49,7 +53,7 @@ export default {
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
-  font-size: 100px;
+  font-size: 60px;
   color: #35495e;
   letter-spacing: 1px;
 }
