@@ -1,4 +1,4 @@
-import pkg from './package'
+llimport pkg from './package'
 
 export default {
   mode: 'universal',
