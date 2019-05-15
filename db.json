@@ -1,0 +1,17 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "La Pichetache",
+      "description": "Lorem ipsum dolor sit amet",
+      "price": 3.99,
+      "category_id": 1
+    },
+    {
+      "name": "Test de produit",
+      "description": "Test encore",
+      "price": "500",
+      "id": 3
+    }
+  ]
+}
